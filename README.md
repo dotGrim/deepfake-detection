@@ -4,14 +4,15 @@ Written in Spring 2026 for CS400-01 Computer Vision.
 
 ## Conda Environment
 
-We experienced some difficulties getting the exported environment to work across both Conda and pip, and thus the installation may take awhile.
+> [!WARNING]
+> We experienced difficulties exporting the correct environment, resulting in some errors when importing. This may require some manual installations to get working.
 
 Install the included `environment.yml` conda environment to ensure you have the appropriate Python libraries & packages installed.   
-Run `conda env create -f environment.yml` to install, then `conda activate df` to activate the environment.
+Run `conda env create -f environment.yml` to install, then `conda activate df` to activate the environment.   
 - Include `-n new_name` if you want to use a different environment name (default is `df`)   
 
-Run `conda install torchvision` to install Torchvision.
-Run `pip install facenet-pytorch==2.6.0` to install Facenet, a library used for preprocessing and cropping videos from the dataset.
+Run `conda install torchvision` to install Torchvision.   
+Run `pip install facenet-pytorch==2.6.0` to install Facenet, a library used for preprocessing and cropping videos from the dataset.   
 - Facenet is not currently available in conda environments.   
 
 Ensure both `opencv-python` and `opencv-python-headless` are of version 4.13.0 (`pip list | grep opencv`). If they are not already installed, install them.   
